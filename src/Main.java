@@ -23,18 +23,31 @@ public class Main {
 
         int[] largestRA3 = RandomArrayGenerator.generateRandomArray(largestArraySize);
 
-
+        int [] smallBubble1 = smallestRA1.clone();
         // Start measuring execution time
-        long startTime = System.nanoTime();
-
-        //count_function(10000000);
-
+        long smallBubble1startTime = System.nanoTime();
+        BubbleSort.bubbleSort(smallBubble1);
         // Stop measuring execution time
-        long endTime = System.nanoTime();
-
+        long smallBubble1endTime = System.nanoTime();
         // Calculate the execution time in milliseconds
-        long executionTime = (endTime - startTime) / 1000000;
+        long smallBubble1ExecutionTime = (smallBubble1endTime - smallBubble1startTime) / 1000000;
 
-        System.out.println("Counting to 10000000 takes " + executionTime + "ms");
+        int [] smallBubble2 = smallestRA2.clone();
+        long smallBubble2startTime = System.nanoTime();
+        BubbleSort.bubbleSort(smallBubble2);
+        long smallBubble2endTime = System.nanoTime();
+        long smallBubble2ExecutionTime = (smallBubble2endTime - smallBubble2startTime) / 1000000;
+
+        int [] smallBubble3 = smallestRA3.clone();
+        long smallBubble3startTime = System.nanoTime();
+        BubbleSort.bubbleSort(smallBubble3);
+        long smallBubble3endTime = System.nanoTime();
+        long smallBubble3ExecutionTime = (smallBubble3endTime - smallBubble3startTime) / 1000000;
+
+        long avgSmallBubbleExecutionTime = (smallBubble1ExecutionTime + smallBubble2ExecutionTime +
+                smallBubble3ExecutionTime) / 3;
+
+        System.out.println("Using bubble sort on an array size of " + smallestArraySize +
+                " takes on average " + avgSmallBubbleExecutionTime + " ms");
     }
 }

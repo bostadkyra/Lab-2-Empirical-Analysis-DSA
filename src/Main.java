@@ -18,23 +18,17 @@ public class Main {
         int[] largestRA2 = RandomArrayGenerator.generateRandomArray(largestArraySize);
         int[] largestRA3 = RandomArrayGenerator.generateRandomArray(largestArraySize);
 
-        int [] smallBubble1 = smallestRA1.clone();
-        int [] smallBubble2 = smallestRA2.clone();
-        int [] smallBubble3 = smallestRA3.clone();
+        //BubbleSort.bubbleSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
 
-        //BubbleSort.bubbleSortAndTime(smallBubble1, smallBubble2, smallBubble3, smallestArraySize);
+        //BubbleSort.bubbleSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
 
-        int [] mediumBubble1 = mediumRA1.clone();
-        int [] mediumBubble2 = mediumRA2.clone();
-        int [] mediumBubble3 = mediumRA3.clone();
+        //BubbleSort.bubbleSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
 
-        //BubbleSort.bubbleSortAndTime(mediumBubble1, mediumBubble2, mediumBubble3, mediumArraySize);
+        SelectionSort.selectionSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
 
-        int [] largeBubble1 = largestRA1.clone();
-        int [] largeBubble2 = largestRA2.clone();
-        int [] largeBubble3 = largestRA3.clone();
+        SelectionSort.selectionSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
 
-        BubbleSort.bubbleSortAndTime(largeBubble1, largeBubble2, largeBubble3, largestArraySize);
+        SelectionSort.selectionSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
 
     }
 }

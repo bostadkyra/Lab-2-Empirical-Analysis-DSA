@@ -26,13 +26,13 @@ public class Main {
 
         //BubbleSort.bubbleSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
 
-        //BubbleSort.bubbleSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
+        //BubbleSort.bubbleSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize); Note: would not load
 
         //SelectionSort.selectionSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
 
         //SelectionSort.selectionSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
 
-        //SelectionSort.selectionSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
+        //SelectionSort.selectionSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize); Note: would not load
 
         //MergeSort.mergeSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
 

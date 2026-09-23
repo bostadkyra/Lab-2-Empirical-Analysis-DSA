@@ -18,17 +18,38 @@ public class Main {
         int[] largestRA2 = RandomArrayGenerator.generateRandomArray(largestArraySize);
         int[] largestRA3 = RandomArrayGenerator.generateRandomArray(largestArraySize);
 
+        //Note: if lines were not commented out, we would need to make clones of each array
+        //rather than using the same arrays for each sorting method. This would ensure that
+        //the arrays are not being sorted by the previously listed method in the code.
+
         //BubbleSort.bubbleSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
 
         //BubbleSort.bubbleSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
 
         //BubbleSort.bubbleSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
 
-        SelectionSort.selectionSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
+        //SelectionSort.selectionSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
 
-        SelectionSort.selectionSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
+        //SelectionSort.selectionSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
 
-        SelectionSort.selectionSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
+        //SelectionSort.selectionSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
 
+        //MergeSort.mergeSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
+
+        //MergeSort.mergeSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
+
+        //MergeSort.mergeSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
+
+        //HeapSort.heapSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
+
+        //HeapSort.heapSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
+
+        //HeapSort.heapSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
+
+        QuickSort.quickSortAndTime(smallestRA1, smallestRA2, smallestRA3, smallestArraySize);
+
+        QuickSort.quickSortAndTime(mediumRA1, mediumRA2, mediumRA3, mediumArraySize);
+
+        QuickSort.quickSortAndTime(largestRA1, largestRA2, largestRA3, largestArraySize);
     }
 }
